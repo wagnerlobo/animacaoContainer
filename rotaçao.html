@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @keyframes circle {
+	0% {
+		transform: rotate(0deg) translateX(25px);
+	}
+	100% {
+		transform: rotate(360deg) translateX(25px);
+	}
+}
+
+.circle {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: DodgerBlue;
+	margin: 60px auto;
+
+	animation: circle 1s linear infinite;
+}
+</style>
+<body>
+    <div class="circle"></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventoDom</title>
+</head>
+<style>
+    body {
+        color: white;
+        margin: 10px;
+        border: 10px;
+       
+        background: dodgerblue;
+
+    }
+    #container {
+        background-color: darkblue;
+        width: 200px;
+        height: 200px;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        
+    }
+</style>
+<body>
+    <div id="container">caixa</div>
+    <script>
+        var container = document.querySelector("#container");
+        container.addEventListener("mouseover", function(){
+            this.style.backgroundColor = "red"
+        });
+        var container = document.querySelector("#container");
+        container.addEventListener("mouseout", function(){
+            this.style.backgroundColor = "black"
+           
+        });
+
+        
+    </script>
+</body>
+</html>
